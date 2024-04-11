@@ -4,12 +4,17 @@ import vibaPressLeftLogo from "./../atom/images/vibaPressLogo.png";
 import vibaPressRightLogo from "./../atom/images/rightLogoVibaPress.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-import MobileNavTabs from "../atom/MobileNavTabs";
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { showNavbar, hideNavbar } from "../redux/action/showHideMobileNavBar";
 
 const Navbar = () => {
 
-    const [ activeSideMenu, setActiveSideMenu ] = useState(false);
+
+    // dispatch
+    const dispatch = useDispatch();
+
+    //selector
+    const showMobileTab = useSelector( (state) => state.showHideMobileNavBar)
 
     return(
         <div>
@@ -23,13 +28,11 @@ const Navbar = () => {
                 {/* hamburger menu for mobile */}
                 <div className="hamburgerMode" >
                     {
-                        activeSideMenu ? 
-                        <RxCross2 size={30} onClick={() =>  {setActiveSideMenu(false)}}/> : 
-                        <GiHamburgerMenu size={30} onClick={() =>  {setActiveSideMenu(true)}}/>
+                        showMobileTab ? 
+                        <RxCross2 size={30} onClick={() => dispatch(hideNavbar())}/> : 
+                        <GiHamburgerMenu size={30} onClick={() => dispatch(showNavbar())}/>
                     }
                 </div>
-
-                {activeSideMenu && <MobileNavTabs />}
 
                 {/* Navigation tabs to redirct new page */}
                 <div className="nav-tabs">
