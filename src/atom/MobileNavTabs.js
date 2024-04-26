@@ -1,5 +1,5 @@
 import React from "react";
-import './css/MobileNavTabs.style.css'
+import './css/MobileNavTabs.style.css';
 
 const MobileNavTabs = () => {
 
