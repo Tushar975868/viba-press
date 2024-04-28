@@ -1,0 +1,55 @@
+.outerCoreCompitancy{
+    text-align: center;
+    background-color: azure;
+    padding: 60px 120px;
+}
+
+.coreCompitancy{
+    width: auto;
+    height: auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.coreCompitancyHeading{
+    text-align: center;
+}
+
+.outerCoreCompitancy>span{
+    font-size: 40px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgb(26, 99, 99);
+}
+
+@media(max-width: 1180px){
+    .outerCoreCompitancy{
+        padding: 60px 30px;
+    }
+}
+
+@media(max-width: 980px){
+    .outerCoreCompitancy{
+        padding: 60px 10px;
+    }
+}
+
+@media(max-width: 480px){
+    .outerCoreCompitancy{
+        padding: 30px 10px;
+        height: auto;
+    }
+
+    .outerCoreCompitancy>span{
+        font-size: 30px;
+    }
+
+    .coreCompitancy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+}

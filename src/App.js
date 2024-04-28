@@ -7,6 +7,7 @@ import homeBackground from './atom/images/video/homeBackground.mp4';
 import HomePageText from './atom/HomePageText';
 import BusinessStrength from './molecule/BusinessStrength';
 import CombineRing from './molecule/CombineRing';
+import CoreCompitancy from './molecule/CoreCompitancy';
 
 
 const App = () => {
@@ -32,6 +33,8 @@ const App = () => {
       <BusinessStrength />
 
       <CombineRing />
+
+      <CoreCompitancy />
       
 
       

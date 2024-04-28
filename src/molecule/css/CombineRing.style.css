@@ -1,7 +1,12 @@
+.outerMain{
+    padding: 0px 100px;
+    background-color: rgba(252, 185, 0, 1);
+
+}
+
 .main{
     width: 100%;
     height: 497px;
-    background-color: rgba(252, 185, 0, 1);
     text-align: center;
 }
 
@@ -38,6 +43,11 @@
 @media (max-width: 980px){
     .main{
         height: auto;
+    }
+    .outerMain{
+        padding: 0px 50px;
+        background-color: rgba(252, 185, 0, 1);
+    
     }
 }
 
