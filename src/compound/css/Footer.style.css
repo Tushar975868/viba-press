@@ -1,0 +1,106 @@
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+
+.address{
+    width: 33.3%;
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.aboutAddress{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.addressBelow{
+    display: flex;
+    flex-direction: column; 
+}
+
+.addressHeaderText{
+    font-size: larger;
+    padding-bottom: 5px;
+}
+
+.addressAboutText{
+    font-size: small;
+    color: grey;
+}
+
+.aboutAndServices{
+    width: 33.3%;
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgb(245, 240, 240);
+    border-right: 1px solid rgb(245, 240, 240);
+}
+
+.ul_aboutAndServices{
+    font-size: small;
+    color: gray;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.ul_aboutAndServices > span{
+    padding-bottom: 5px;
+}
+
+.contactsAndEmail{
+    width: 33.3%;
+    padding: 70px 50px;
+}
+
+.contactsAndEmail_innerdiv{
+    display: flex;
+    flex-direction: row; 
+    color: gray; 
+    font-size: small;
+    padding-top: 5px;
+}
+
+
+@media (max-width: 980px) {
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .address{
+        width: 80%;
+        padding: 50px 30px;
+    }
+
+    .aboutAddress{
+        padding-bottom: 20px;
+    }
+
+    .aboutAndServices{
+        width: 80%;
+        padding: 0px 30px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .contactsAndEmail{
+        width: 80%;
+        padding: 50px 30px;
+    }
+}
