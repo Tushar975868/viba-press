@@ -8,3 +8,12 @@ export const cards = {
     service_and_communication: "Customer service and communication",
     service_and_communication_detail: "Providing expert advice, maintaining clear communication, and prioritizing customer satisfaction.",
 }
+
+export const footer = {
+    vibaPress: "Viba Press pvt. ltd.",
+    aboutViba: "We are one of the largest printing companies in the Okhla Industrial Area, providing our services across India for many years.",
+    aboutAndServicesHeader: "What we can build for you",
+    contact: "+91 9120725725",
+    email: "info@vibapress.in",
+
+}

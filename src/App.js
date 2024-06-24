@@ -8,6 +8,7 @@ import HomePageText from './atom/HomePageText';
 import BusinessStrength from './molecule/BusinessStrength';
 import CombineRing from './molecule/CombineRing';
 import CoreCompitancy from './molecule/CoreCompitancy';
+import Footer from './compound/Footer';
 
 
 const App = () => {
@@ -35,6 +36,8 @@ const App = () => {
       <CombineRing />
 
       <CoreCompitancy />
+
+      <Footer />
       
 
       

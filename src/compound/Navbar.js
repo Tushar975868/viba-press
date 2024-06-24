@@ -41,7 +41,7 @@ const Navbar = () => {
                         <li>What we do</li>
                         <li>Services we offer</li>
                         <li>Our Clients</li>
-                        <li>Our Infrastructure and Team</li>
+                        <li className="border border-black bg-pink-400">Our Infrastructure and Team</li>
                     </ul>
                 </div>
 
