@@ -10,7 +10,7 @@ const MobileNavTabs = () => {
                 <li>What we do</li>
                 <li>Services we offer</li>
                 <li>Our Clients</li>
-                <li  className="border font-bold bg-pink-400 border-black">Our Infrastructure and Team</li>
+                <li>Our Infrastructure and Team</li>
                 <li>Contact Us</li>
             </ul>
         </div>

@@ -9,39 +9,13 @@ import BusinessStrength from './molecule/BusinessStrength';
 import CombineRing from './molecule/CombineRing';
 import CoreCompitancy from './molecule/CoreCompitancy';
 import Footer from './compound/Footer';
+import HomePage from './compound/HomePage';
 
 
 const App = () => {
-
-  //selectors
-  const showMobileTab = useSelector((state) =>  state.showHideMobileNavBar )
-  console.log(showMobileTab, "Tushar")
   return (
-    <div className='default-class'>
-
-      <Navbar/>
-
-      {showMobileTab && <MobileNavTabs />}
-
-      <div className='homePageBackgroundOfEarth'>
-        <video className='videoTag' autoPlay loop muted>
-          <source src={homeBackground} type='video/mp4' />
-        </video>
-      </div>
-
-      <HomePageText />
-
-      <BusinessStrength />
-
-      <CombineRing />
-
-      <CoreCompitancy />
-
-      <Footer />
-      
-
-      
-      
+    <div>
+      <HomePage/>
     </div>
   );
 }
