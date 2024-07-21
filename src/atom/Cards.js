@@ -9,7 +9,7 @@ const Card = ({heading, image, detail}) => {
             <span className="cardHeading">{heading}</span>
 
             <div className="cardimage">
-                <img src={image} />
+                <img src={image} alt="loading"/>
             </div>
 
             <span className="cardDetail">{detail}</span>

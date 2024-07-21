@@ -30,7 +30,7 @@ const BusinessStrength = () => {
             </div>
 
             <div className="image">
-                <img src={BusinessStrengthImage} />
+                <img src={BusinessStrengthImage} alt="loading" />
             </div>
 
         </div>

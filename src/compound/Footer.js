@@ -34,8 +34,12 @@ const Footer = () => {
                     <span>Banners</span>
                     <span>Broucher</span>
                     <span>Magazines</span>
-                    <span>Print on Demands</span>
-                    <span>Commercial & Publicity Materials</span>
+                    <span>Rigid Boxes</span>
+                    <span>Mono Cartons</span>
+                    <span>Corrugated Boxes</span>
+                    <span>Labels</span>
+                    <span>Paper bags</span>
+                    <span>Branding Kits</span>
                 </div>
             </div>
 

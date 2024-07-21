@@ -1,12 +1,14 @@
 import React from "react";
 import './css/HomePageText.style.css';
+import { Home } from "../constant";
 
-const HomePageText = () => {
+const HomePageText = (props) => {
 
     return(
         <div className="HomePageText">
-            <span>Turning pixels into paper,</span>
-            <span>Dreams into reality.</span>
+            <span>{props.quoteLine1}</span>
+            <span>{props.quoteLine2}</span>
+            <div className={props.border}/>
         </div>
     )
 }
