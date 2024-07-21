@@ -1,0 +1,19 @@
+
+
+.WhoWeAreVideo{
+    /* width: 100%; */
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+}
+
+.WhoWeAreVideoTag{
+    width: 100%;
+    opacity: 0.95;
+}
+
+.ourStory{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}

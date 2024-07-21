@@ -1,0 +1,16 @@
+.imageCrousalCard{
+    display: flex;
+    min-width: 100%;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    justify-content: space-around;
+}
+
+.imageCrousalContent{
+    width: 550px;
+    /* padding-left: 50px; */
+}
+
+.imageCrousalImage > img{
+    width: 280px;
+}

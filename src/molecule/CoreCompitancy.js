@@ -2,9 +2,9 @@ import React from "react";
 import Card from "../atom/Cards";
 import { cards } from "../constant";
 import attentionToDetailImage from "../atom/images/attentionToDetail.jpeg";
-import printingToprecisionImage from "../atom/images/precesionFinal.jpeg"
-import  serviceAndCommunicationImage from "../atom/images/serviceAndCommunication.jpeg"
-import technologicalExpertiseImage from "../atom/images/technologicalExperties.jpeg"
+import printingToprecisionImage from "../atom/images/precesionFinal.jpeg";
+import  serviceAndCommunicationImage from "../atom/images/serviceAndCommunication.jpeg";
+import technologicalExpertiseImage from "../atom/images/technologicalExperties.jpeg";
 import "./css/CoreCompitancy.style.css";
 
 const CoreCompitancy = () => {

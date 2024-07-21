@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { useDispatch, useSelector } from "react-redux";
 import { showNavbar, hideNavbar } from "../redux/action/showHideMobileNavBar";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -21,8 +22,12 @@ const Navbar = () => {
             <nav className="navbar">
 
                 {/* LOGO SECTION OF HEADER for left side */}
-                <div className="logo-vibaPress">
-                    <img src={vibaPressLeftLogo} alt="Viba Press Logo"/>
+                <div className="outer-logo-vibaPress">
+                <Link to="/">
+                    <div className="logo-vibaPress">
+                        <img src={vibaPressLeftLogo} alt="Viba Press Logo"/>
+                    </div>
+                </Link>
                 </div>
 
                 {/* hamburger menu for mobile */}
@@ -37,7 +42,7 @@ const Navbar = () => {
                 {/* Navigation tabs to redirct new page */}
                 <div className="nav-tabs">
                     <ul>
-                        <li>Who we are</li>
+                        <NavLink className={(e) => {return e.isActive ? "nav-tab-li" : ""}} to="/WhoWeAre"><li>Who we are</li></NavLink>
                         <li>What we do</li>
                         <li>Services we offer</li>
                         <li>Our Clients</li>
@@ -51,9 +56,12 @@ const Navbar = () => {
                 </div>
 
                 {/* LOGO SECTION OF HEADER for left side */}
-                <div className="logo-vibaPressRight">
-                    <img src={vibaPressRightLogo} alt="Viba Press Logo"/>
-                </div>
+                <Link to="/">
+                    <div className="logo-vibaPressRight">
+                        <img src={vibaPressRightLogo} alt="Viba Press Logo"/>
+                    </div>
+                </Link>
+                
 
             </nav>
         </div>

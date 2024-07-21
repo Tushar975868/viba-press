@@ -12,11 +12,16 @@
 }
 
 .logo-vibaPress{
+display: flex;
+}
+
+.outer-logo-vibaPress{
     grid-column: 2/3;
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-top: -23px;
+    margin-top: -16px;
+
 }
 
 .logo-vibaPress > img{
@@ -55,7 +60,19 @@
 }
 
 .nav-tabs > ul > li:hover {
+    color: rgb(6, 84, 124); 
+    text-decoration: underline; 
+}
+
+.nav-tab-li {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: bold;
     color: rgb(89, 75, 7); 
+    text-decoration: underline; 
+}
+
+.nav-tab-li:hover {
+    color: rgb(6, 84, 124); 
     text-decoration: underline; 
 }
 
@@ -136,8 +153,13 @@
         padding-top: 10px;
     }
 
+    .outer-logo-vibaPress{
+        grid-column: 1/2;
+        padding-top: 10px;
+    }
+
     .logo-vibaPress > img{
-        width: 300px;
+        width: 220px;
     }
 
     .contact-us{

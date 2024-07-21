@@ -9,6 +9,7 @@ import BusinessStrength from '../molecule/BusinessStrength';
 import CombineRing from '../molecule/CombineRing';
 import CoreCompitancy from '../molecule/CoreCompitancy';
 import Footer from './Footer';
+import { Home } from '../constant';
 
 
 const HomePage = () => {
@@ -19,7 +20,7 @@ const HomePage = () => {
   return (
     <div className='default-class'>
 
-      <Navbar/>
+      {/* <Navbar/> */}
 
       {showMobileTab && <MobileNavTabs />}
 
@@ -29,7 +30,7 @@ const HomePage = () => {
         </video>
       </div>
 
-      <HomePageText />
+      <HomePageText quoteLine1={Home.quoteLine1} quoteLine2={Home.quoteLine2}/>
 
       <BusinessStrength />
 
@@ -37,7 +38,7 @@ const HomePage = () => {
 
       <CoreCompitancy />
 
-      <Footer />
+      {/* <Footer /> */}
       
 
       
