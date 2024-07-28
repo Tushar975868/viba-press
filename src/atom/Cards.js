@@ -1,18 +1,18 @@
 import React from "react";
 import "./css/Cards.style.css";
 
-const Card = ({heading, image, detail}) => {
+const Card = (props) => {
 
     return(
-        <div className="card">
+        <div className="card" >
 
-            <span className="cardHeading">{heading}</span>
+            <span className="cardHeading" >{props.heading}</span>
 
-            <div className="cardimage">
-                <img src={image} alt="loading"/>
+            <div className="cardimage" >
+                <img src={props.image} alt="loading"/>
             </div>
 
-            <span className="cardDetail">{detail}</span>
+            <span className="cardDetail">{props.detail}</span>
         </div>
     )
 }

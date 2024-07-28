@@ -42,10 +42,10 @@ const Navbar = () => {
                 {/* Navigation tabs to redirct new page */}
                 <div className="nav-tabs">
                     <ul>
-                        <NavLink className={(e) => {return e.isActive ? "nav-tab-li" : ""}} to="/WhoWeAre"><li>Who we are</li></NavLink>
-                        <li>What we do</li>
-                        <li>Services we offer</li>
-                        <li>Our Clients</li>
+                        <NavLink className={(e) => {return e.isActive ? "nav-tab-li-active" : "nav-tab-li-inactive"}} to="/WhoWeAre"><li>Who we are</li></NavLink>
+                        <NavLink className={(e) => {return e.isActive ? "nav-tab-li-active" : "nav-tab-li-inactive"}} to="/WhatWeDo"><li>What we do</li></NavLink>
+                        {/* <li>Services we offer</li> */}
+                        <NavLink className={(e) => {return e.isActive ? "nav-tab-li-active" : "nav-tab-li-inactive"}} to="/OurClient"><li>Our Clients</li></NavLink>
                         <li>Our Infrastructure and Team</li>
                     </ul>
                 </div>

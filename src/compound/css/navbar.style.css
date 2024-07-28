@@ -64,14 +64,21 @@ display: flex;
     text-decoration: underline; 
 }
 
-.nav-tab-li {
+.nav-tab-li-active {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: rgb(89, 75, 7); 
     text-decoration: underline; 
 }
 
-.nav-tab-li:hover {
+.nav-tab-li-inactive {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #040101; 
+    text-decoration: none;
+}
+
+.nav-tab-li-active:hover, .nav-tab-li-inactive:hover {
     color: rgb(6, 84, 124); 
     text-decoration: underline; 
 }

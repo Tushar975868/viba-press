@@ -1,0 +1,45 @@
+.WhatWeDo-services{
+    background-color: #1E2222;
+    padding: 50px;
+}
+
+.WhatWeDo-image{
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    margin-bottom: -5px;
+    max-height: 500px;
+}
+
+.WhatWeDo-image > img {
+    padding-top: 50px;
+    width: 120%;
+    overflow-x: hidden;
+}
+
+.WhatWeDo-heading{
+    font-size: 25px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: rgb(237, 231, 231);
+}
+
+.WhatWeDo-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+@media(max-width: 1180px) {
+    .WhatWeDo-image > img {
+        padding-top: 80px;        
+    }
+}
+
+@media(max-width: 980px) {
+    .WhatWeDo-image > img {
+        padding-top: 80px;
+    }
+}

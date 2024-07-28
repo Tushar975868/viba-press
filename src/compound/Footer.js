@@ -29,8 +29,8 @@ const Footer = () => {
                 <div className="ul_aboutAndServices">
                     <span>Books</span>
                     <span>Notebook</span>
-                    <span>Calander</span>
-                    <span>Pemplates</span>
+                    <span>Calendars</span>
+                    <span>Pamphlet</span>
                     <span>Banners</span>
                     <span>Broucher</span>
                     <span>Magazines</span>

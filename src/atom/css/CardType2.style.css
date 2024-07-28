@@ -1,0 +1,23 @@
+.CardType2{
+    width: 380px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    transition: all 0.3s ease-in-out;
+}
+
+.cardType2Heading{
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 35px;
+    padding-bottom: 40px;
+    color: white;
+    padding-top: 10px;
+}
+
+.CardType2:hover{
+    transform: translateY(-15px);
+
+}
+
