@@ -2,7 +2,6 @@
 
 .WhoWeAreVideo{
     /* width: 100%; */
-    font-family: Roboto, Arial, Helvetica, sans-serif;
 
 }
 
@@ -15,5 +14,10 @@
     display: flex;
     flex-direction: column;
     padding: 30px 20px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.outStoryUl{
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }

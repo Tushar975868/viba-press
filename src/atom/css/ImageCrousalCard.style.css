@@ -14,3 +14,22 @@
 .imageCrousalImage > img{
     width: 280px;
 }
+
+@media only screen and (max-width: 480px){
+    .imageCrousalCard{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 0px;
+        color: rgb(78, 75, 71)
+    }
+
+    .imageCrousalContent{
+        width: 100%;
+        margin-top: -70px ;
+    }
+
+    .imageCrousalImage{
+        margin-top: -30px;;
+    }
+}

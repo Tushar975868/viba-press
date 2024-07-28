@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import React from 'react';
 import ImageCrousalCard from '../atom/ImageCrousalCard';
 import './css/ImageCrousal.style.css';
@@ -13,20 +13,30 @@ const ImageCrousal = () => {
     const boxRef = useRef(null);
     const intervalRef = useRef(null);
 
+    const [crouselItems, setCrouselItems] = useState([
+        { heading: WhoWeAreConstants.deliveryAward, text: WhoWeAreConstants.deliveryAwardContent, image: deliveryAward, padding: "90px", paddingImage:"90px"},
+        { heading: WhoWeAreConstants.certificationOfHonour, text: WhoWeAreConstants.certificationOfHonourContent, image: certificationOfHonour, padding:"100px"},
+        { heading: WhoWeAreConstants.economicSurveyOfIndia, text: WhoWeAreConstants.economicSurveyOfIndiaContent, image: economicSurveyOfIndiaC, padding:"100px", paddingImage:"100px"},
+        { heading: WhoWeAreConstants.indianConstitutionOfIndia, text: WhoWeAreConstants.indianConstitutionOfIndiaContent, image: indianConstitutionOfIndian, padding:"100px", paddingImage:"100px"},
+        { heading: WhoWeAreConstants.enterpreneurOfTheYear, text: WhoWeAreConstants.enterpreneurOfTheYearContent, image: enterprenareOfYear, padding:"90px", paddingImage:"90px"},
+ ]);
+
+ 
+
     useEffect(() => {
         const startInterval = () => {
             const interval = setInterval(() => {
                 const box = boxRef.current;
                 if (box) {
                     const width = box.clientWidth;
-                    console.log(box.scrollLeft,"Tushar")
                     box.scrollLeft = box.scrollLeft + width;
-                    if(box.scrollLeft === 12207.2724609375)
-                    {
-                        box.scrollLeft = 0;
+                    const maxWidth = box.scrollWidth -width;
+                    if(Math.ceil(box.scrollLeft) === maxWidth){
+                        setCrouselItems(prevItems => [...prevItems, ...prevItems])
                     }
+                    
                 }
-            }, 2000);
+            }, 4000);
             intervalRef.current = interval;
         }
 
@@ -48,14 +58,13 @@ const ImageCrousal = () => {
                 const box = boxRef.current;
                 if(box){
                     const width = box.clientWidth;
-                    console.log(box.scrollLeft,"Tushar")
                     box.scrollLeft = box.scrollLeft + width;
-                    if(box.scrollLeft === 12207.2724609375)
-                    {
-                        box.scrollLeft = 0;
+                    const maxWidth = box.scrollWidth -width;
+                    if(Math.ceil(box.scrollLeft) === maxWidth){
+                        setCrouselItems(prevItems => [...prevItems, ...prevItems])
                     }
                 }
-            }, 500)
+            }, 4000)
 
             intervalRef.current = interval;
         }
@@ -63,19 +72,13 @@ const ImageCrousal = () => {
         startInterval();
      }
 
-     const crouselItems = [
-            { heading: WhoWeAreConstants.deliveryAward, text: WhoWeAreConstants.deliveryAwardContent, image: deliveryAward, padding: "90px", paddingImage:"90px"},
-            { heading: WhoWeAreConstants.certificationOfHonour, text: WhoWeAreConstants.certificationOfHonourContent, image: certificationOfHonour, padding:"100px"},
-            { heading: WhoWeAreConstants.economicSurveyOfIndia, text: WhoWeAreConstants.economicSurveyOfIndiaContent, image: economicSurveyOfIndiaC, padding:"100px", paddingImage:"100px"},
-            { heading: WhoWeAreConstants.indianConstitutionOfIndia, text: WhoWeAreConstants.indianConstitutionOfIndiaContent, image: indianConstitutionOfIndian, padding:"100px", paddingImage:"100px"},
-            { heading: WhoWeAreConstants.enterpreneurOfTheYear, text: WhoWeAreConstants.enterpreneurOfTheYearContent, image: enterprenareOfYear, padding:"90px", paddingImage:"90px"}
-     ]
+    
 
   return (
     <div className='mainImagerousal' onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave} >
         <span className='mainImagerousalHeader'>Our Accomplishments</span>
         <div className='imageCrousal' ref={boxRef}>
-            {[...crouselItems, ...crouselItems].map((item, index) => (
+            {crouselItems.map((item, index) => (
                 <ImageCrousalCard 
                 key={index}
                 heading={item.heading}

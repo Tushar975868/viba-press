@@ -47,3 +47,9 @@ export const WhoWeAreConstants = {
     enterpreneurOfTheYear: "Entrepreneur Of the year",
     enterpreneurOfTheYearContent: "Vinay Baveja, the founder of Viba Press, was honored with the MERI College Excellence Award for Entrepreneur of the Year in 2018. This prestigious recognition celebrates his exceptional leadership and innovative contributions to the print production industry. Under his visionary guidance, Viba Press has grown into a leading print production house, known for its commitment to quality and excellence. The award underscores Vinay Baveja's entrepreneurial spirit and dedication to advancing the industry. Viba Press takes immense pride in his achievements and looks forward to continued success under his leadership."
 }
+
+export const WhatWeDoConstants = {
+    heading: "We transform ideas into high-quality prints that make brands stand out.",
+    serviceDivHeading: "Our service transforms your business and engages your audience with high-quality colors and superior print standards",
+
+}

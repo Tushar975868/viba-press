@@ -27,15 +27,15 @@ const WhoWeAre = () => {
                 <span style={{fontWeight: "600", fontSize: "30px"}}>{WhoWeAreConstants.ourStory}</span><br/>
                 {
                 WhoWeAreConstants.OurStoryDetail.split('\n').map(line => (
-                    <span style={{fontWeight: "300", fontSize: "18px"}}>{line}</span>
+                    <span style={{fontWeight: "300", fontSize: "17px"}}>{line}</span>
                 ))
                 }
                 <br/>
                 <br/>
                 <span style={{fontWeight: "600", fontSize: "30px"}}>{WhoWeAreConstants.ourMission}</span><br/>
                 <span style={{fontWeight: "300", fontSize: "18px"}}>{WhoWeAreConstants.mission}</span>
-                <ul>
-                    <li>{WhoWeAreConstants.missionPoint1}</li>
+                <ul className="outStoryUl">
+                    <li className="outStoryUl">{WhoWeAreConstants.missionPoint1}</li>
                     <li>{WhoWeAreConstants.missionPoint2}</li>
                     <li>{WhoWeAreConstants.missionPoint3}</li>
                     <li>{WhoWeAreConstants.missionPoint4}</li>

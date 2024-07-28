@@ -6,7 +6,7 @@ const HomePageText = (props) => {
 
     return(
         <div className="HomePageText">
-            <span>{props.quoteLine1}</span>
+            <span style={props.style}>{props.quoteLine1}</span>
             <span>{props.quoteLine2}</span>
             <div className={props.border}/>
         </div>
