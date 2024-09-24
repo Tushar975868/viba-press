@@ -7,6 +7,7 @@ import Navbar from './compound/Navbar';
 import Footer from './compound/Footer';
 import WhatWeDo from './compound/WhatWeDo';
 import OurClient from './compound/OurClient';
+import OurInfraAndTeams from './compound/OurInfraAndTeams';
 
 const App = () => {
 
@@ -26,6 +27,11 @@ const App = () => {
     {
       path: "/OurClient",
       element: <> <Navbar /> <OurClient /> <Footer /> </>
+    },
+    {
+      path: "/OurInfraAndTeams",
+      element: <> <Navbar /> <OurInfraAndTeams /> <Footer /> </>
+      
     }
   ])
   return (

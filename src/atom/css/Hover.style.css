@@ -1,0 +1,26 @@
+.hover{
+    background: rgba(2, 7, 7, 0.307);
+    height: 230px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    width: 350px;
+    position: relative;
+    bottom:50%;
+    left: 0%;
+    padding: 15px;
+    margin-top: 90px;
+    border-radius: 20px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #fdfdfc;
+}
+
+
+.hover-heading{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.hover-ul{
+    list-style-type: disc;
+}
+

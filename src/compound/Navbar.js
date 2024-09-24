@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './css/navbar.style.css';
 import vibaPressLeftLogo from "./../atom/images/vibaPressLogo.png";
 import vibaPressRightLogo from "./../atom/images/rightLogoVibaPress.png";
@@ -9,6 +9,12 @@ import { showNavbar, hideNavbar } from "../redux/action/showHideMobileNavBar";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+
+    const [activeTab, setACtiveTab] = useState(0);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);  
+      },[activeTab]);
 
 
     // dispatch
@@ -23,7 +29,7 @@ const Navbar = () => {
 
                 {/* LOGO SECTION OF HEADER for left side */}
                 <div className="outer-logo-vibaPress">
-                <Link to="/">
+                <Link to="/" onClick={() => setACtiveTab(0)}>
                     <div className="logo-vibaPress">
                         <img src={vibaPressLeftLogo} alt="Viba Press Logo"/>
                     </div>
@@ -42,11 +48,11 @@ const Navbar = () => {
                 {/* Navigation tabs to redirct new page */}
                 <div className="nav-tabs">
                     <ul>
-                        <NavLink className={(e) => {return e.isActive ? "nav-tab-li-active" : "nav-tab-li-inactive"}} to="/WhoWeAre"><li>Who we are</li></NavLink>
-                        <NavLink className={(e) => {return e.isActive ? "nav-tab-li-active" : "nav-tab-li-inactive"}} to="/WhatWeDo"><li>What we do</li></NavLink>
+                        <NavLink className={(e) => {return e.isActive ? "nav-tab-li-active" : "nav-tab-li-inactive"}} to="/WhoWeAre" onClick={() => setACtiveTab(1)}><li>Who we are</li></NavLink>
+                        <NavLink className={(e) => {return e.isActive ? "nav-tab-li-active" : "nav-tab-li-inactive"}} to="/WhatWeDo" onClick={() => setACtiveTab(2)}><li>What we do</li></NavLink>
                         {/* <li>Services we offer</li> */}
-                        <NavLink className={(e) => {return e.isActive ? "nav-tab-li-active" : "nav-tab-li-inactive"}} to="/OurClient"><li>Our Clients</li></NavLink>
-                        <li>Our Infrastructure and Team</li>
+                        <NavLink className={(e) => {return e.isActive ? "nav-tab-li-active" : "nav-tab-li-inactive"}} to="/OurClient" onClick={() => setACtiveTab(3)}><li>Our Clients</li></NavLink>
+                        <NavLink className={(e) => {return e.isActive ? "nav-tab-li-active" : "nav-tab-li-inactive"}} to="/OurInfraAndTeams" onClick={() => setACtiveTab(4)}><li>Our Infrastructure and Machine</li></NavLink>
                     </ul>
                 </div>
 
@@ -56,7 +62,7 @@ const Navbar = () => {
                 </div>
 
                 {/* LOGO SECTION OF HEADER for left side */}
-                <Link to="/">
+                <Link to="/" onClick={() => setACtiveTab(0)}>
                     <div className="logo-vibaPressRight">
                         <img src={vibaPressRightLogo} alt="Viba Press Logo"/>
                     </div>
