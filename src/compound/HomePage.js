@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import MobileNavTabs from '../atom/MobileNavTabs';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import './css/HomePage.style.css';
 import homeBackground from '../atom/images/video/homeBackground.mp4';  //'./atom/images/video/homeBackground.mp4';
 import HomePageText from '../atom/HomePageText';

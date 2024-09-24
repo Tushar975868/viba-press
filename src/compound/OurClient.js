@@ -1,6 +1,7 @@
 import React from 'react';
 import CardType2 from '../atom/CardType2';
 import './css/OurClient.style.css';
+import { OurCliensConstants } from '../constant';
 import sonyLOGO from '../atom/images/clientLogo/sonyLogo.png';
 import BureauOfIndian from '../atom/images/clientLogo/bureau-of-indian-standards.png';
 import crpf from '../atom/images/clientLogo/crpf.png';
@@ -35,47 +36,59 @@ import ntpc from '../atom/images/clientLogo/ntpc.png';
 import nfl_logo from '../atom/images/clientLogo/nfl-logo-new.png';
 import nisd from '../atom/images/clientLogo/nisd.png';
 import soi from '../atom/images/clientLogo/soi.png';
+import { useSelector, useDispatch } from 'react-redux';
+import MobileNavTabs from '../atom/MobileNavTabs';
 
 const OurClient = () => {
+
+  const showMobileTab = useSelector((state) =>  state.showHideMobileNavBar )
+
+  const CardType = [
+    {image: sonyLOGO,  width: "100px",  height: "100px"},
+    {image: BureauOfIndian,  width: "100px",  height: "100px"},
+    {heading: "Army Aviation Flight safety", width: "100px", height:"10px", color:"red", size:"15px", weight:"600", paddingTop:"30px"},
+    { image: crpf, width: "90px", height: "100px", },
+    { image: who, width: "100px", height: "100px", },
+    { image: bhel, width: "120px", height: "100px", },
+    { image: chicago_pizza, width: "120px", height: "100px", },
+    { image: nsic, width: "120px", height: "65px", },
+    { image: scert, width: "79px", height: "75px", },
+    { image: publication_division, width: "69px", height: "75px", },
+    { image: nhdc, width: "69px", height: "75px", },
+    { image: itdc, width: "200px", height: "70px"},
+    { image: nationalCouncilOfCement, width: "75px", height: "81px", },
+    { image: nstfdc, width: "78px", height: "81px", },
+    { image: ncert, width: "60px", height: "90px", },
+    { image: nhrcLogo, width: "62px", height: "90px", },
+    { image: icar, width: "62px", height: "90px", },
+    { image: iiip, width: "80px", height: "100px", },
+    { image: irfc, width: "120px", height: "81px", },
+    { image: sceb, width: "99px", height: "90px", },
+    { image: hudco, width: "80px", height: "100px", },
+    { image: Guru_Gobind_Singh_Indraprastha_University12, width: "197px", height: "80px", },
+    { image: dces, width: "110px", height: "90px", },
+    { image: dgaqa, width: "253px", height: "75px", },
+    { image: cvc, width: "120px", height: "80px", },
+    { image: ccras, width: "75px", height: "75px", },
+    { image: aepc, width: "315px", height: "60px", },
+    { image: aryavratBank, width: "80px", height: "80px", },
+    { image: ibg, width: "84px", height: "80px", },
+    { image: iaf, width: "80px", height: "90px", },
+    { image: NHBLOGO, width: "390px", height: "75px", },
+    { image: ntpc, width: "150px", height: "75px", },
+    { image: nfl_logo, width: "80px", height: "70px", },
+    { image: nisd, width: "337px", height: "75px", },
+    { image: soi, width: "310px", height: "75px", },
+  ]
   return (
     <div className='ourClient'>
-        <span className='ourClient-heading'>Brands we have collaborated with so far</span>
+      {showMobileTab && <MobileNavTabs />}
+        <span className='ourClient-heading'>{OurCliensConstants.heading}</span>
         <div className='ourClient-cards'>
-            <CardType2 image={sonyLOGO} width="100px" height="100px"/>
-            <CardType2 image={BureauOfIndian} width="100px" height="100px" />
-            <CardType2 heading="Army Aviation Flight safety" width="100px" height="10px" color="red" size="15px" weight="600" paddingTop="30px" />
-            <CardType2 image={crpf} width="90px" height="100px" />
-            <CardType2 image={who} width="100px" height="100px" />
-            <CardType2 image={bhel} width="120px" height="100px" />
-            <CardType2 image={chicago_pizza} width="120px" height="100px" />
-            <CardType2 image={nsic} width="120px" height="65px" />
-            <CardType2 image={scert} width="79px" height="75px" />
-            <CardType2 image={publication_division} width="69px" height="75px" />
-            <CardType2 image={nhdc} width="69px" height="75px" />
-            <CardType2 image={itdc} width="200px" height="70px"/>
-            <CardType2 image={nationalCouncilOfCement} width="75px" height="81px" />
-            <CardType2 image={nstfdc} width="78px" height="81px" />
-            <CardType2 image={ncert} width="60px" height= "90px" />
-            <CardType2 image={nhrcLogo} width="62px" height="90px" />
-            <CardType2 image={icar} width="62px" height="90px" />
-            <CardType2 image={iiip} width="80px" height="100px" />
-            <CardType2 image={irfc} width="120px" height="81px" />
-            <CardType2 image={sceb} width="99px" height="90px" />
-            <CardType2 image={hudco} width="80px" height="100px" />
-            <CardType2 image={Guru_Gobind_Singh_Indraprastha_University12} width="197px" height="80px" />
-            <CardType2 image={dces} width="110px" height="90px" />
-            <CardType2 image={dgaqa} width="253px" height="75px" />
-            <CardType2 image={cvc} width="120px" height="80px" />
-            <CardType2 image={ccras} width="75px" height="75px" />
-            <CardType2 image={aepc} width="315px" height="60px" />
-            <CardType2 image={aryavratBank} width="80px" height="80px" />
-            <CardType2 image={ibg} width="84px" height="80px" />
-            <CardType2 image={iaf} width="80px" height="90px" />
-            <CardType2 image={NHBLOGO} width="390px" height="75px" />
-            <CardType2 image={ntpc} width="150px" height="75px" />
-            <CardType2 image={nfl_logo} width="80px" height="70px" />
-            <CardType2 image={nisd} width="337px" height="75px" />
-            <CardType2 image={soi} width="310px" height="75px" />
+
+          {
+            CardType.map( cardData => <CardType2 image={cardData?.image} heading={cardData?.heading} width={cardData?.width} height={cardData?.height} color={cardData?.color} size={cardData?.size} weight={cardData?.weight} paddingTop={cardData?.paddingTop} />)
+          }
 
         </div>
 

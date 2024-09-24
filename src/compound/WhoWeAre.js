@@ -4,11 +4,16 @@ import "./css/WhoWeAre.style.css";
 import HomePageText from "../atom/HomePageText";
 import { WhoWeAreConstants } from "../constant";
 import ImageCrousal from "../molecule/ImageCrousal";
+import { useSelector, useDispatch } from 'react-redux';
+import MobileNavTabs from '../atom/MobileNavTabs';
 
 const WhoWeAre = () => {
 
+    const showMobileTab = useSelector((state) =>  state.showHideMobileNavBar )
+
     return(
         <div className="WhoWeAre_DefaultClass">
+            {showMobileTab && <MobileNavTabs />}
 
             {/* who we are video section */}
             <div className='WhoWeAreVideo'>

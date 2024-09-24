@@ -53,3 +53,11 @@ export const WhatWeDoConstants = {
     serviceDivHeading: "Our service transforms your business and engages your audience with high-quality colors and superior print standards",
 
 }
+
+export const OurCliensConstants = {
+    heading: "Brands we have collaborated with so far",
+}
+
+export const OurInfraAndTeam = {
+    heading: "Types of machinery utilized for delivering your product....",
+}

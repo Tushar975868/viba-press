@@ -16,8 +16,12 @@ import brouchers from '../atom/images/brouchers.jpg';
 import brandingKits from '../atom/images/brandingKits.jpg';
 import banners from '../atom/images/banners.jpg';
 import rigidBox from '../atom/images/RigidBox.jpg';
+import { useSelector, useDispatch } from 'react-redux';
+import MobileNavTabs from '../atom/MobileNavTabs';
 
 const WhatWeDo = () => {
+
+    const showMobileTab = useSelector((state) =>  state.showHideMobileNavBar )
 
     const style = {
         width: "70%",
@@ -26,6 +30,7 @@ const WhatWeDo = () => {
 
   return (
     <div className='whatWeDo-Parent'>
+        {showMobileTab && <MobileNavTabs />}
         
         <div className='WhatWeDo-image'>
             <img src={whatWEDOimage} alt="Image is Loading....." />
