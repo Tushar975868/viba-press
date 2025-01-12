@@ -61,3 +61,8 @@ export const OurCliensConstants = {
 export const OurInfraAndTeam = {
     heading: "Types of machinery utilized for delivering your product....",
 }
+
+export const ContactUsConstants = {
+    contactUs: "Get In Touch",
+    contactUsMessage: "You can send Any Feedback or requirment to us from here",
+}
