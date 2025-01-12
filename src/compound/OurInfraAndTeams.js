@@ -8,6 +8,7 @@ import "./css/OurInfraAndTeams.style.css";
 import Hover from "../atom/Hover";
 import { useSelector, useDispatch } from 'react-redux';
 import MobileNavTabs from '../atom/MobileNavTabs';
+import ContactUs from "./ContactUs";
 
 const OurInfraAndTeams = () => {
   const [isHoverForPrePress, setIsHoverrPrePress] = useState(false);
@@ -67,6 +68,7 @@ const OurInfraAndTeams = () => {
   ];
 
   return (
+    <>
     <div className="InfraAndTeam">
       {showMobileTab && <MobileNavTabs />}
       <span className="InfraAndTeam-heading">{OurInfraAndTeam.heading}</span>
@@ -100,6 +102,7 @@ const OurInfraAndTeams = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

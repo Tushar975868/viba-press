@@ -7,10 +7,12 @@ import { RxCross2 } from "react-icons/rx";
 import { useDispatch, useSelector } from "react-redux";
 import { showNavbar, hideNavbar } from "../redux/action/showHideMobileNavBar";
 import { Link, NavLink } from "react-router-dom";
+import ContactUs from "./ContactUs";
 
 const Navbar = () => {
 
     const [activeTab, setACtiveTab] = useState(0);
+    const [contactUsPopup, setContactUsPopup] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0);  
@@ -24,7 +26,7 @@ const Navbar = () => {
     const showMobileTab = useSelector( (state) => state.showHideMobileNavBar)
 
     return(
-        <div>
+        <div onMouseLeave={() => setContactUsPopup(false)}>
             <nav className="navbar">
 
                 {/* LOGO SECTION OF HEADER for left side */}
@@ -57,8 +59,15 @@ const Navbar = () => {
                 </div>
 
                 {/* Contact Us Page */}
-                <div className="contact-us">
-                    <span>Contact Us</span>
+                <div className="contact-us"  >
+                    <span onMouseEnter={() => setContactUsPopup(true)}>Contact Us</span>
+                </div>
+
+                {/* pop up raise */}
+                <div onMouseLeave={() => setContactUsPopup(false)}>
+                    {
+                        contactUsPopup && <ContactUs />
+                    }
                 </div>
 
                 {/* LOGO SECTION OF HEADER for left side */}
