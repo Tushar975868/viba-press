@@ -19,7 +19,7 @@ const ContactUs = () => {
         const publicKey = "fvEz7P1aQydxXV-YB";
 
         const templateParams = {
-            to_name: "Viba Press",
+            to_name: "PrinTek",
             from_name: name,
             message: feedback,
             from_contact: contact,

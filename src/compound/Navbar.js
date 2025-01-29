@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
 import './css/navbar.style.css';
-import vibaPressLeftLogo from "./../atom/images/vibaPressLogo.png";
-import vibaPressRightLogo from "./../atom/images/rightLogoVibaPress.png";
+// import vibaPressLeftLogo from "./../atom/images/vibaPressLogo.png";
+import prinTekLeftLogo from "./../atom/images/Printek.png";
+// import vibaPressRightLogo from "./../atom/images/rightLogoVibaPress.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { useDispatch, useSelector } from "react-redux";
@@ -30,10 +31,10 @@ const Navbar = () => {
             <nav className="navbar">
 
                 {/* LOGO SECTION OF HEADER for left side */}
-                <div className="outer-logo-vibaPress">
+                <div className="outer-logo-PrinTek">
                 <Link to="/" onClick={() => setACtiveTab(0)}>
-                    <div className="logo-vibaPress">
-                        <img src={vibaPressLeftLogo} alt="Viba Press Logo"/>
+                    <div className="logo-PrinTek">
+                        <img src={prinTekLeftLogo} alt="PrinTek Logo"/>
                     </div>
                 </Link>
                 </div>
@@ -71,11 +72,11 @@ const Navbar = () => {
                 </div>
 
                 {/* LOGO SECTION OF HEADER for left side */}
-                <Link to="/" onClick={() => setACtiveTab(0)}>
-                    <div className="logo-vibaPressRight">
-                        <img src={vibaPressRightLogo} alt="Viba Press Logo"/>
+                {/* <Link to="/" onClick={() => setACtiveTab(0)}>
+                    <div className="logo-PrinTekRight">
+                        <img src={PrinTekRightLogo} alt="PrinTek Logo"/>
                     </div>
-                </Link>
+                </Link> */}
                 
 
             </nav>

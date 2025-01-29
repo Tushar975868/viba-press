@@ -12,7 +12,7 @@ const BusinessStrength = () => {
             <div className="content">
                 <span>Our Core Values and Convictions</span>
                 <span >
-                    At <b>Viba Press</b>, 
+                    At <b>PrinTek</b>, 
                     we're not just about printing books, paper, and various materials;
                     we're about crafting experiences that leave a lasting impression.
                     Our commitment goes beyond ink and paper; 

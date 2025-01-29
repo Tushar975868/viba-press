@@ -9,7 +9,7 @@ const CombineRing = () => {
             <div className="main">
                 <span className="heading">We focus on delivering better experice end-to-end</span>
                 <div className="heading2"> 
-                    <span><b>Viba</b> is dedicated to revolutionizing the printing press industry by optimizing the printing experience (PX),</span>
+                    <span><b>PrinTek</b> is dedicated to revolutionizing the printing press industry by optimizing the printing experience (PX),</span>
                     <span>enhance their product quality (PQ) and efficiency.</span>
                 </div>
 
