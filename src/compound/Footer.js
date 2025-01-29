@@ -11,16 +11,16 @@ const Footer = () => {
 
             <div className="address">
                 <div className="aboutAddress">
-                    <span className="addressHeaderText">{footer.vibaPress}</span>
-                    <span className="addressAboutText">{footer.aboutViba}</span>
+                    <span className="addressHeaderText">{footer.PrinTek}</span>
+                    <span className="addressAboutText">{footer.aboutPrinTek}</span>
                 </div>
                 <div className="addressBelow">
                     <span style={{paddingBottom: "5px"}}>Address</span>
-                    <span style={{fontSize: "small"}}>{footer.vibaPress}</span>
-                    <span style={{fontSize: "small", color: "gray" }}>C-66/3,</span>
-                    <span style={{fontSize: "small", color: "gray" }}>Okhla Industrial Area,</span>
+                    <span style={{fontSize: "small"}}>{footer.PrinTek}</span>
+                    <span style={{fontSize: "small", color: "gray" }}>D-606/9,</span>
+                    <span style={{fontSize: "small", color: "gray" }}>Panchi Vihar,</span>
                     <span style={{fontSize: "small", color: "gray" }}>Phase II,</span>
-                    <span style={{fontSize: "small", color: "gray" }}> New Delhi, 110 020</span>
+                    <span style={{fontSize: "small", color: "gray" }}> New Delhi, 110 000</span>
                 </div>
             </div>
 

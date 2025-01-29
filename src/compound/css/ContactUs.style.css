@@ -1,13 +1,25 @@
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .contactUs{
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 550px;
+    width: 350px;
+    height: 400px;
     padding: 10px;
     background-color: rgb(250, 250, 250);
     position: absolute;
-    left: 55%;
-    top: 100%;
+    right: 1%;
+    top: 102%;
+    animation: slideInFromRight 0.6s ease-out;
     /* z-index: 2; */
 }
 
@@ -17,20 +29,20 @@
 }
 
 .contactUs-MainHeading {
-    font-size: xx-large;
+    font-size: x-large;
     color: rgb(58, 12, 207);
     font-weight: 600;
     align-self: center;
-    padding: 40px 0px;
+    padding: 10px 0px;
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',;
 }
 
 .contactUs-subHeading {
-    font-size: large;
+    font-size: medium;
     color: rgb(58, 12, 207);
     font-weight: 500;
     align-self: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',;
 }
 
@@ -51,7 +63,7 @@
 
 .contactUs-input-name-contact input {
     width: 45%;
-    height: 45px;
+    height: 35px;
     background-color: rgb(225, 225, 244);
     border: none;
     border-radius: 5px;
@@ -62,7 +74,7 @@
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New';
     text-align: left;
     padding-left: 20px;
-    font-size: larger;
+    font-size: medium;
     font-weight: 500;
 }
 
@@ -71,33 +83,33 @@
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New';
     text-align: left;
     padding-left: 20px;
-    font-size: larger;
+    font-size: medium;
     font-weight: 500;
 } 
 
 .contactUs-email input {
     width: 70%;
-    height: 45px;
+    height: 35px;
     background-color: rgb(202, 202, 244);
     border: none;
     border-radius: 5px;
 }
 
 .contactUs-email{
-    padding-top: 30px;
+    padding-top: 25px;
     display: flex;
     justify-content: space-around;
 }
 
 .contactUs-feedback{
-    padding-top: 30px;
+    padding-top: 25px;
     display: flex;
     justify-content: space-around;
 }
 
 .contactUs-feedback textarea {
     width: 90%;
-    height: 90px;
+    height: 70px;
     background-color: rgb(175, 175, 245);
     border: none;
     border-radius: 5px;
@@ -108,38 +120,39 @@
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New';
     text-align: left;
     padding-left: 20px;
-    padding-top: 20px;
-    font-size: larger;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: medium;
     font-weight: 500;
 }
 
 .contactUs-button {
-    padding-top: 30px;
+    padding-top: 25px;
     display: flex;
     justify-content: space-around;
 }
 
 .contactUs-button button {
     width: 40%;
-    height: 45px;
+    height: 35px;
     background-color:  rgb(133, 133, 246);
     border: none;
     border-radius: 5px;
     color: rgb(82, 36, 234);
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New';
-    font-size: larger;
+    font-size: medium;
     font-weight: 500;
 }
 
 .contactUs-button button:hover {
     width: 42%;
-    height: 47px;
+    height: 37px;
     background-color:  rgb(238, 144, 56);
     border: none;
     border-radius: 5px;
     color: rgb(218, 217, 222);
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New';
-    font-size: larger;
+    font-size: medium;
     font-weight: 500;
 }
 
